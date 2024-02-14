@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #737373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #cccccc75;
+  outline: none;
+}
+input[type="text"] {
+  width: 100%;
+}
+input[type="text"]:focus {
+  border: 1px solid #0d6dfd80;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.taskBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-top: 50px;
+  background-color: #f5f6f7;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+/**============================================
+ *               BUTTON STYLES
+ *=============================================**/
+.addBtn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+.deleteBtn {
+  background-color: #4d4d4d83;
+  color: white;
+  font-weight: bold;
+  transition: ease-in-out 0.1s;
+}
+.deleteBtn:hover {
+  background-color: #ff4d4d;
+}
+.editBtn {
+  background-color: #aaaaaa3b;
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+  transition: ease-in-out 0.1s;
+}
+/*=============== END OF SECTION ==============*/
+
+/**============================================
+ * *              INPUT STYLES
+ *=============================================**/
+.taskInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 23px;
+  margin-top: 20px;
+}
+/*=============== END OF SECTION ==============*/
+
+/**============================================
+  * *              TASKLIST STYLES
+  *=============================================**/
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.taskStatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.activeTask {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #cccccc75;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+}
+.doneTask {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.74);
+  border: solid 1px #0d6dfd57;
+}
+.doneTask .taskStatus span {
+  text-decoration: line-through;
+}
+.taskBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*=============== END OF SECTION ==============*/
